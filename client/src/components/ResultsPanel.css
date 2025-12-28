@@ -1,0 +1,155 @@
+.results-panel {
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  flex: 1;
+}
+
+.results-panel h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.results-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 300px;
+  color: #888888;
+  font-style: italic;
+}
+
+.results-error {
+  padding: 1.5rem;
+  background: #2a1a1a;
+  border: 1px solid #5a2a2a;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.error-icon {
+  font-size: 1.5rem;
+}
+
+.error-message {
+  flex: 1;
+  color: #ff6b6b;
+}
+
+.error-message strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.results-empty {
+  padding: 2rem;
+  text-align: center;
+  color: #888888;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 350px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #1a2a1a;
+  border: 1px solid #2a4a2a;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.success-indicator {
+  color: #4caf50;
+  font-weight: 500;
+}
+
+.row-count {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.results-table-wrapper {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  min-height: 300px;
+  max-height: none;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 100%;
+}
+
+.results-table thead {
+  background: #2a2a2a;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.results-table th {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #ffffff;
+  border-bottom: 2px solid #444444;
+  white-space: nowrap;
+}
+
+.results-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #333333;
+  color: #cccccc;
+  white-space: nowrap;
+}
+
+.results-table tbody tr:hover {
+  background: #2a2a2a;
+}
+
+.results-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Custom scrollbar for dark theme */
+.results-table-wrapper::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.results-table-wrapper::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.results-table-wrapper::-webkit-scrollbar-thumb {
+  background: #444444;
+  border-radius: 4px;
+}
+
+.results-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+

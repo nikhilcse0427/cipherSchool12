@@ -5,11 +5,10 @@ import cookieParser from 'cookie-parser'
 import morgan from 'morgan'
 import helmet from 'helmet'
 
-// Import error handlers
 import { ApiError } from './utils/ApiError.js'
 
 app.use(cors({
-  origin: process.env.CORS_ORIGIN,
+  origin: '*',
   credentials: true
 }))
 
@@ -19,13 +18,18 @@ app.use(express.static("public"))
 app.use(cookieParser())
 
 app.use(morgan('dev'))
-app.use(helmet())
 
-//import router
+app.use(helmet({
+  crossOriginResourcePolicy: { policy: "cross-origin" },
+  crossOriginEmbedderPolicy: false
+}))
+
 import userRouter from './routes/user.routes.js'
+import assignmentRouter from './routes/assignment.routes.js'
 
 //router
 app.use('/api/v1/users', userRouter)
+app.use('/api/v1/assignments', assignmentRouter)
 
 // Global error handler middleware
 app.use((err, req, res, next) => {
