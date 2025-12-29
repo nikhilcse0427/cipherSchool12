@@ -4,31 +4,31 @@
   padding: 2rem;
   background-color: #000000;
   min-height: 100vh;
-}
-
-.assignment-list-header {
+  }
+  
+  .assignment-list-header {
   text-align: center;
   margin-bottom: 3rem;
-}
-
-.assignment-list-header h1 {
+  }
+  
+  .assignment-list-header h1 {
   font-size: 2.5rem;
   color: #ffffff;
   margin-bottom: 0.5rem;
-}
-
-.assignment-list-header p {
+  }
+  
+  .assignment-list-header p {
   font-size: 1.1rem;
   color: #aaaaaa;
-}
-
-.assignments-grid {
+  }
+  
+  .assignments-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
-}
-
-.assignment-card {
+  }
+  
+  .assignment-card {
   background: #1a1a1a;
   border-radius: 8px;
   padding: 1.5rem;
@@ -38,29 +38,29 @@
   display: block;
   transition: transform 0.2s, box-shadow 0.2s;
   border: 1px solid #333333;
-}
-
-.assignment-card:hover {
+  }
+  
+  .assignment-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
   border-color: #444444;
-}
-
-.assignment-card-header {
+  }
+  
+  .assignment-card-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 1rem;
-}
-
-.assignment-card-header h3 {
+  }
+  
+  .assignment-card-header h3 {
   margin: 0;
   font-size: 1.25rem;
   color: #ffffff;
   flex: 1;
-}
-
-.difficulty-badge {
+  }
+  
+  .difficulty-badge {
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
   font-size: 0.75rem;
@@ -68,23 +68,22 @@
   color: white;
   white-space: nowrap;
   margin-left: 0.5rem;
-}
-
-.assignment-description {
+  }
+  
+  .assignment-description {
   color: #aaaaaa;
   margin-bottom: 1rem;
   font-size: 0.9rem;
-}
-
-.assignment-preview {
+  }
+  
+  .assignment-preview {
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid #333333;
-}
-
-.preview-text {
+  }
+  
+  .preview-text {
   font-size: 0.85rem;
   color: #888888;
   font-style: italic;
-}
-
+  }

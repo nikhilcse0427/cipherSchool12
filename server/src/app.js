@@ -33,7 +33,7 @@ app.use('/api/v1/assignments', assignmentRouter)
 
 // Global error handler middleware
 app.use((err, req, res, next) => {
-  console.error("❌ Global error handler caught:", err);
+  console.error("Global error handler caught:", err);
 
   let error = err;
 

@@ -32,17 +32,14 @@ const userSchema = new Schema({
   timestamps: true
 })
 
-//it will run just before saving document in db
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next() //isko nahi add karenge to agr kuch bhi add karenge to baar baar password hash karega
   this.password = await bcrypt.hash(this.password, 10)
   next()
 })
-
 userSchema.methods.isPasswordCorrect = async function (password) {
   return await bcrypt.compare(password, this.password)
 }
-
 userSchema.methods.generateAccessToken = function () {
   return jwt.sign(
     {

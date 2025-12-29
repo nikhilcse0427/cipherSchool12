@@ -3,16 +3,16 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-}
-
-.table-list {
+  }
+  
+  .table-list {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
-}
-
-.table-button {
+  }
+  
+  .table-button {
   padding: 0.5rem 1rem;
   background: #2a2a2a;
   border: 1px solid #444444;
@@ -21,100 +21,99 @@
   font-size: 0.9rem;
   color: #ffffff;
   transition: all 0.2s;
-}
-
-.table-button:hover {
+  }
+  
+  .table-button:hover {
   background: #3a3a3a;
   border-color: #555555;
-}
-
-.table-button.active {
+  }
+  
+  .table-button.active {
   background: #64b5f6;
   color: white;
   border-color: #64b5f6;
-}
-
-.table-details {
+  }
+  
+  .table-details {
   flex: 1;
   overflow: auto;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
-
-.table-schema h3,
-.table-data h3 {
+  }
+  
+  .table-schema h3,
+  .table-data h3 {
   margin: 0 0 0.75rem 0;
   font-size: 1rem;
   color: #ffffff;
-}
-
-.schema-list {
+  }
+  
+  .schema-list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-}
-
-.schema-item {
+  }
+  
+  .schema-item {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
   background: #2a2a2a;
   border-radius: 4px;
   border: 1px solid #333333;
-}
-
-.column-name {
+  }
+  
+  .column-name {
   font-weight: 600;
   color: #ffffff;
-}
-
-.column-type {
+  }
+  
+  .column-type {
   color: #aaaaaa;
   font-size: 0.85rem;
   font-family: monospace;
-}
-
-.data-table-wrapper {
+  }
+  
+  .data-table-wrapper {
   overflow: auto;
   border: 1px solid #333333;
   border-radius: 4px;
   max-height: 400px;
-}
-
-.data-table {
+  }
+  
+  .data-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.85rem;
-}
-
-.data-table thead {
+  }
+  
+  .data-table thead {
   background: #2a2a2a;
   position: sticky;
   top: 0;
   z-index: 10;
-}
-
-.data-table th {
+  }
+  
+  .data-table th {
   padding: 0.5rem;
   text-align: left;
   font-weight: 600;
   color: #ffffff;
   border-bottom: 2px solid #444444;
   white-space: nowrap;
-}
-
-.data-table td {
+  }
+  
+  .data-table td {
   padding: 0.5rem;
   border-bottom: 1px solid #333333;
   color: #cccccc;
-}
-
-.data-table tbody tr:hover {
+  }
+  
+  .data-table tbody tr:hover {
   background: #2a2a2a;
-}
-
-.data-table tbody tr:last-child td {
+  }
+  
+  .data-table tbody tr:last-child td {
   border-bottom: none;
-}
-
+  }

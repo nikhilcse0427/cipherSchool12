@@ -5,7 +5,6 @@ const attemptSchema = new mongoose.Schema(
     assignmentId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Assignment',
-      required: true
     },
     userId: {
       type: mongoose.Schema.Types.ObjectId,
@@ -28,10 +27,7 @@ const attemptSchema = new mongoose.Schema(
       default: false
     }
   },
-  {
-    timestamps: true
-  }
+  {timestamps: true}
 );
-
 export const Attempt = mongoose.model('Attempt', attemptSchema);
 
