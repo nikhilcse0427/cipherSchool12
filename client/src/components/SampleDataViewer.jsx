@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import './SampleDataViewer.css'
+import React, { useState } from 'react';
+import './SampleDataViewer.css';
 
 const SampleDataViewer = ({ sampleData }) => {
-  const [activeTable, setActiveTable] = useState(null)
+  const [activeTable, setActiveTable] = useState(null);
 
-  const tables = Object.keys(sampleData)
+  const tables = Object.keys(sampleData);
 
   return (
     <div className="sample-data-viewer">
@@ -49,7 +49,6 @@ const SampleDataViewer = ({ sampleData }) => {
                   {sampleData[activeTable].rows.map((row, index) => (
                     <tr key={index}>
                       {sampleData[activeTable].schema.map((column) => {
-                        // Try both original case and lowercase
                         const colName = column.name;
                         const value = row[colName] !== undefined ? row[colName] : row[colName.toLowerCase()];
                         return <td key={column.name}>{value}</td>;
@@ -63,8 +62,7 @@ const SampleDataViewer = ({ sampleData }) => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default SampleDataViewer
-
+export default SampleDataViewer;
